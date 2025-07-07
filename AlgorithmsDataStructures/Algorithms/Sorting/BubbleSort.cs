@@ -16,8 +16,7 @@ public static class BubbleSorting
     /// <exception cref="ArgumentNullException">Thrown when array is null.</exception>
     public static void BubbleSort<T>(T[] array, IComparer<T>? comparer = null)
     {
-        if (array == null)
-            throw new ArgumentNullException(nameof(array));
+        ArgumentNullException.ThrowIfNull(array);
 
         comparer ??= Comparer<T>.Default;
         int n = array.Length;

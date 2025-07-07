@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AlgorithmsDataStructures.Algorithms.Sorting
+﻿namespace AlgorithmsDataStructures.Algorithms.Sorting
 {
+    /// <summary>
+    /// Collection of various sorting algorithms implementations.
+    /// </summary>
     public static class SelectionSorting
     {
         /// <summary>
@@ -19,8 +16,7 @@ namespace AlgorithmsDataStructures.Algorithms.Sorting
         /// <exception cref="ArgumentNullException">Thrown when array is null.</exception>
         public static void SelectionSort<T>(T[] array, IComparer<T>? comparer = null)
         {
-            if (array == null)
-                throw new ArgumentNullException(nameof(array));
+            ArgumentNullException.ThrowIfNull(array);
 
             comparer ??= Comparer<T>.Default;
             int n = array.Length;

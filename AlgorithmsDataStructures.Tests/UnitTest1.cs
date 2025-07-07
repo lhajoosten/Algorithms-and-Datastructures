@@ -1,4 +1,6 @@
-﻿namespace AlgorithmsDataStructures.Tests
+﻿using Xunit;
+
+namespace AlgorithmsDataStructures.Tests
 {
     public class UnitTest1
     {

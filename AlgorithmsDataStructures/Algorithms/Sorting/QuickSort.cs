@@ -1,5 +1,8 @@
 ﻿namespace AlgorithmsDataStructures.Algorithms.Sorting
 {
+    /// <summary>
+    /// Collection of various sorting algorithms implementations.
+    /// </summary>
     public static class QuickSorting
     {
         /// <summary>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AlgorithmsDataStructures.Benchmarking": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
